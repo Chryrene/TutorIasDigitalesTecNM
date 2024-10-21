@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tutorías - TecNM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .hidden-message {
+            color: transparent;
+            font-size: 1px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            user-select: all;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <header class="bg-[#1B396A] text-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center py-4">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="https://via.placeholder.com/60" alt="TecNM Logo" class="mr-4 w-15 h-15 rounded-full shadow-md">
+                    <div>
+                        <h1 class="text-2xl font-bold">TecNM</h1>
+                        <p class="text-sm">Sistema de Tutorías</p>
+                    </div>
+                </div>
+                <nav class="flex flex-wrap justify-center md:justify-end space-x-4">
+                    <a href="../Webpage/index.html" class="hover:text-gray-300 transition duration-300 flex items-center">
+                        <i class="fas fa-home mr-2"></i> Inicio
+                    </a>
+                    <a href="../Webpage/login.html" class="hover:text-gray-300 transition duration-300 flex items-center">
+                        <i class="fas fa-sign-in-alt mr-2"></i> Iniciar Sesión
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold text-[#1B396A] mb-6 text-center">Bienvenido al Sistema de Tutorías TecNM</h1>
+            
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
+                <div class="p-6">
+                    <p class="text-lg text-gray-700 mb-4">
+                        Descubre un mundo de apoyo académico personalizado diseñado especialmente para ti.
+                    </p>
+                    <div class="flex justify-center">
+                        <a href="/Webpage/login.html" 
+                            class="bg-[#1B396A] text-white px-6 py-3 rounded-full hover:bg-[#2C5282] transition duration-300 transform hover:scale-105 flex items-center"
+                        >
+                            Comenzar Mi Viaje Académico
+                            <i class="fas fa-chevron-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h2 class="text-2xl font-bold text-[#1B396A] mb-4">¿Por qué usar nuestro sistema?</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Apoyo personalizado de tutores expertos</li>
+                        <li>Seguimiento detallado de tu progreso académico</li>
+                        <li>Recursos educativos adaptados a tus necesidades</li>
+                        <li>Flexibilidad para programar sesiones de tutoría</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h2 class="text-2xl font-bold text-[#1B396A] mb-4">Beneficios para estudiantes</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Mejora tu rendimiento académico</li>
+                        <li>Desarrolla habilidades de estudio efectivas</li>
+                        <li>Recibe orientación profesional</li>
+                        <li>Conecta con una comunidad de aprendizaje</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-[#F0F4F8] p-8 rounded-lg shadow-inner">
+                <h2 class="text-3xl font-bold text-[#1B396A] mb-6 text-center">Nuestro Compromiso</h2>
+                <p class="text-lg text-gray-700 text-center mb-6">
+                    En el TecNM, nos dedicamos a proporcionar una experiencia educativa excepcional. 
+                    Nuestro sistema de tutorías es solo una de las muchas formas en que apoyamos tu éxito académico y profesional.
+                </p>
+                <div class="flex justify-center">
+                    <a href="#" class="text-[#1B396A] font-semibold hover:underline">Conoce más sobre nuestros programas →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#1B396A] text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                    <p>Tecnológico Nacional de México</p>
+                    <p>Av. Universidad 1200, Col. Xoco</p>
+                    <p>Alcaldía Benito Juárez, C.P. 03330</p>
+                    <p>Ciudad de México</p>
+                </div>
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:underline">Términos de Uso</a></li>
+                        <li><a href="#" class="hover:underline">Mapa del Sitio</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; <span id="currentYear"></span> Tecnológico Nacional de México | Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--[if IE]><!-->
+    <!--
+    01001000 01000101 01000011 01001000 01001111 00100000 01010000 01001111 01010010 00100000 01010110 01001001 01000011 01010100 01001111 01010010 00100000 01001101 01000001 01001110 01010101 01000101 01001100 00100000 01010000 01000001 01010011 01001111 01010011 00100000 01010010 01000101 01001010 01001111 01001110
+    -->
+    <!--<![endif]-->
+
+    <script src="script.js"></script>
+</body>
+</html>
