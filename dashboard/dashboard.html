@@ -5,26 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Sistema de Tutorías TecNM</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
 </head>
 <body class="flex flex-col min-h-screen bg-gray-100">
     <header class="bg-[#1B396A] text-white shadow-md">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center py-4">
                 <div class="flex items-center mb-4 md:mb-0">
-                    <img src="https://via.placeholder.com/60" alt="TecNM Logo" class="mr-4 w-15 h-15 rounded-full shadow-md">
+                    <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" alt="TecNM Logo" class="mr-4 w-16 h-16">
                     <div>
                         <h1 class="text-2xl font-bold">TecNM</h1>
                         <p class="text-sm">Sistema de Tutorías</p>
                     </div>
                 </div>
                 <nav class="flex flex-wrap justify-center md:justify-end space-x-4">
-                    <a href="index.html" class="hover:text-gray-300 transition duration-300 flex items-center">
+                    <a href="../Webpage/index.html" class="hover:text-gray-300 transition duration-300 flex items-center">
                         <i class="fas fa-home mr-2"></i> Inicio
                     </a>
-                    <a href="dashboard.html" class="hover:text-gray-300 transition duration-300 flex items-center">
+                    <a href="../dashboard/dashboard.html" class="hover:text-gray-300 transition duration-300 flex items-center">
                         <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
                     </a>
                     <a href="../Webpage/index.html" class="hover:text-gray-300 transition duration-300 flex items-center">
@@ -37,19 +35,31 @@
 
     <main class="flex-grow container mx-auto px-4 py-8">
         <div class="max-w-6xl mx-auto">
-            <h1 class="text-3xl font-bold text-[#1B396A] mb-6">Bienvenido a tu Dashboard, Victor Manuel Pasos Rejon
-            </h1>
+            <h1 class="text-3xl font-bold text-[#1B396A] mb-6">Bienvenido a tu Dashboard, Victor Manuel Pasos Rejon</h1>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Cuestionario Actual -->
+                <!-- Cuestionarios Actuales -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <h2 class="text-xl font-semibold text-[#1B396A] mb-4 flex items-center">
                         <i class="fas fa-file-alt mr-2"></i>
-                        Cuestionario Actual
+                        Cuestionarios Actuales
                     </h2>
-                    <p class="text-gray-600 mb-4">Tienes un cuestionario pendiente por responder.</p>
-                    <button class="bg-[#1B396A] text-white px-4 py-2 rounded-full hover:bg-[#2C5282] transition duration-300">
-                        Contestar Ahora
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="cuestionario-competencias.html" class="text-blue-600 hover:underline">Cuestionario de Competencias Tutorales</a>
+                            <p class="text-sm text-gray-600">Evalúa tus habilidades como tutor</p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-blue-600 hover:underline">Encuesta de Satisfacción Estudiantil</a>
+                            <p class="text-sm text-gray-600">Comparte tu experiencia en el programa de tutorías</p>
+                        </li>
+                        <li>
+                            <a href="#" class="text-blue-600 hover:underline">Evaluación de Necesidades Académicas</a>
+                            <p class="text-sm text-gray-600">Identifica áreas de mejora en tu formación</p>
+                        </li>
+                    </ul>
+                    <button class="mt-4 bg-[#1B396A] text-white px-4 py-2 rounded-full hover:bg-[#2C5282] transition duration-300">
+                        Ver Todos los Cuestionarios
                     </button>
                 </div>
 
@@ -84,7 +94,6 @@
                         Recursos de Aprendizaje
                     </h2>
                     <p class="text-gray-600 mb-4">Accede a materiales de estudio y guías útiles.</p>
-                    
                     <button class="bg-[#ED8936] text-white px-4 py-2 rounded-full hover:bg-[#DD6B20] transition duration-300">
                         Explorar Recursos
                     </button>
@@ -156,6 +165,12 @@
             </div>
         </div>
     </footer>
+
+    <!--[if IE]><!-->
+    <!--
+    01001000 01000101 01000011 01001000 01001111 00100000 01010000 01001111 01010010 00100000 01010110 01001001 01000011 01010100 01001111 01010010 00100000 01001101 01000001 01001110 01010101 01000101 01001100 00100000 01010000 01000001 01010011 01001111 01010011 00100000 01010010 01000101 01001010 01001111 01001110
+    -->
+    <!--<![endif]-->
 
     <script src="script.js"></script>
 </body>

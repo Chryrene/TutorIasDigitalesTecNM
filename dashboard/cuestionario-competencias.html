@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Competencias Tutorales - Sistema de Tutorías TecNM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <header class="bg-[#1B396A] text-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center py-4">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" alt="TecNM Logo" class="mr-4 w-16 h-16">
+                    <div>
+                        <h1 class="text-2xl font-bold">TecNM</h1>
+                        <p class="text-sm">Sistema de Tutorías</p>
+                    </div>
+                </div>
+                <nav class="flex flex-wrap justify-center md:justify-end space-x-4">
+                    <a href="../Webpage/index.html" class="hover:text-gray-300 transition duration-300 flex items-center">
+                        <i class="fas fa-home mr-2"></i> Inicio
+                    </a>
+                    <a href="../dashboard/dashboard.html" class="hover:text-gray-300 transition duration-300 flex items-center">
+                        <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
+                    </a>
+                    <a href="../Webpage/index.html" class="hover:text-gray-300 transition duration-300 flex items-center">
+                        <i class="fas fa-sign-out-alt mr-2"></i> Cerrar Sesión
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-3xl font-bold text-[#1B396A] mb-6">Cuestionario de Competencias Tutorales</h1>
+            <p class="text-gray-600 mb-6">Este cuestionario está diseñado para evaluar tus habilidades y conocimientos como tutor. Por favor, responde honestamente a cada  pregunta.</p>
+            
+            <form>
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="text-xl font-semibold text-[#1B396A] mb-2">1. ¿Cuál es tu nivel de experiencia en tutoría académica?</h2>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="experiencia" value="1" class="mr-2">
+                                <span>Principiante (menos de 1 año)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="experiencia" value="2" class="mr-2">
+                                <span>Intermedio (1-3 años)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="experiencia" value="3" class="mr-2">
+                                <span>Avanzado (más de 3 años)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold text-[#1B396A] mb-2">2. ¿Qué estrategias utilizas para motivar a tus tutorados?</h2>
+                        <textarea name="estrategias" rows="4" class="w-full p-2 border rounded-md" placeholder="Describe tus estrategias aquí..."></textarea>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold text-[#1B396A] mb-2">3. ¿Cómo manejas situaciones de conflicto o desacuerdo con tus tutorados?</h2>
+                        <textarea name="manejo_conflictos" rows="4" class="w-full p-2 border rounded-md" placeholder="Explica tu enfoque aquí..."></textarea>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold text-[#1B396A] mb-2">4. Califica tu habilidad para comunicarte efectivamente con tus tutorados:</h2>
+                        <div class="flex items-center space-x-4">
+                            <input type="range" name="comunicacion" min="1" max="5" class="w-full">
+                            <span class="text-sm text-gray-600">1 (Necesita mejorar) - 5 (Excelente)</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold text-[#1B396A] mb-2">5. ¿Qué áreas de tu desempeño como tutor crees que necesitas mejorar?</h2>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="mejoras[]" value="conocimiento" class="mr-2">
+                                <span>Conocimiento del tema</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="mejoras[]" value="comunicacion" class="mr-2">
+                                <span>Habilidades de comunicación</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="mejoras[]" value="planificacion" class="mr-2">
+                                <span>Planificación de sesiones</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="mejoras[]" value="evaluacion" class="mr-2">
+                                <span>Evaluación del progreso del tutorado</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <button type="submit" class="bg-[#1B396A] text-white px-6 py-2 rounded-full hover:bg-[#2C5282] transition duration-300">
+                        Enviar Cuestionario
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-[#1B396A] text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                    <p>Tecnológico Nacional de México</p>
+                    <p>Av. Universidad 1200, Col. Xoco</p>
+                    <p>Alcaldía Benito Juárez, C.P. 03330</p>
+                    <p>Ciudad de México</p>
+                </div>
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:underline">Términos de Uso</a></li>
+                        <li><a href="#" class="hover:underline">Mapa del Sitio</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; <span id="currentYear"></span> Tecnológico Nacional de México | Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--[if IE]><!-->
+    <!--
+    01001000 01000101 01000011 01001000 01001111 00100000 01010000 01001111 01010010 00100000 01010110 01001001 01000011 01010100 01001111 01010010 00100000 01001101 01000001 01001110 01010101 01000101 01001100 00100000 01010000 01000001 01010011 01001111 01010011 00100000 01010010 01000101 01001010 01001111 01001110
+    -->
+    <!--<![endif]-->
+
+    <script src="script.js"></script>
+</body>
+</html>
